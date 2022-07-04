@@ -303,6 +303,17 @@ a {
 
 }
 
+.cart .etiquetteTopVentes {
+    position: absolute;
+    display: inline-block;
+    padding: 8px 15px;
+    top: -.1rem;
+    left: -1.5px;
+    border-radius: 4px;
+    background-color: #000;
+    color: #fff;
+    font-size: 8px;
+}
 .cart .title-cart:hover {
     top: 0;
 
