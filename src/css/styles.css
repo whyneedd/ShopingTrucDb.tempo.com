@@ -395,10 +395,11 @@ a {
 }
 
 .inline .inline-l input[type="submit"] {
-    position: absolute;
-    padding: 25px 25px;
+    position: relative;
+    display: inline-block;
+    padding: 28px 28px;
     border-radius: 50px;
-    right: 6%;
+    right: 3.2rem;
     font-size: 0;
     border: none;
     background-color: #fff;
@@ -411,9 +412,10 @@ a {
     position: relative;
     display: inline-block;
     color: #000;
-    right: 1.8rem;
+    right: 5.8rem;
+    z-index: 1;
     font-size: 24px;
-    top: .8rem;
+    top: .9rem;
 
 }
 
@@ -423,7 +425,7 @@ a {
     justify-content: center;
     align-items: center;
     left: 0;
-    bottom: 0;
+    bottom: -2.8rem;
     width: 100%;
     padding: 20px;
     height: auto;
@@ -467,7 +469,4 @@ a {
         width: 100%;
     }
 
-    .inline .inline-l {
-        display: none;
-    }
 }
