@@ -443,6 +443,12 @@ a {
 
 @media screen and (max-width: 991px) {
 
+    .navbar .logo {
+        position: absolute;
+        left: 15px;
+
+    }
+
     .navbar {
         height: 4rem;
     }
