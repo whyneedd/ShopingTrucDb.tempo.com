@@ -251,7 +251,7 @@ a {
     background-color: #fff;
     margin: 12px;
     border-radius: 8px;
-    padding: 50px;
+    padding: 20px;
     overflow: hidden;
 
     cursor: pointer;
@@ -381,8 +381,9 @@ a {
     color: #fff;
 }
 
-.cart-footer .inline .inline-l .searcht {
-    display: block;
+.cart-footer .inline .inline-l form input[type="email"] {
+    position: relative;
+    display: inline-block;
     width: 18rem;
     height: 3.5rem;
     border-radius: 50px;
@@ -394,12 +395,13 @@ a {
 
 }
 
-.inline .inline-l input[type="submit"] {
+.inline .inline-l form em input[type="submit"] {
     position: relative;
     display: inline-block;
+    top: -3.5rem;
     padding: 28px 28px;
     border-radius: 50px;
-    right: 3.2rem;
+    right: -80%;
     font-size: 0;
     border: none;
     background-color: #fff;
@@ -408,14 +410,15 @@ a {
 
 }
 
-.inline .inline-l i {
+.inline .inline-l form i {
     position: relative;
     display: inline-block;
     color: #000;
-    right: 5.8rem;
+    right: -63%;
     z-index: 1;
     font-size: 24px;
-    top: .9rem;
+    top: -2.8rem;
+    pointer-events: none;
 
 }
 
