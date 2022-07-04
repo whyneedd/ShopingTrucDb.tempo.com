@@ -441,7 +441,7 @@ a {
 
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 991px) {
 
     .navbar {
         height: 4rem;
@@ -471,5 +471,72 @@ a {
         display: flex;
         width: 100%;
     }
+    .humbger {
+        display: block;
+        position: fixed;
+     
+        width: 35px;
+        height: 35px;
+        top: 15px;
+        right: 15px;
+        z-index: 1050;
+        align-items: center;
 
+        appearance: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .humbger .bar,
+    .humbger::before,
+    .humbger::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+        border-radius: 5rem;
+        transition: .4s;
+    }
+
+    .humbger.active::before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .humbger.active::after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .humbger.active .bar {
+        opacity: 0;
+    }
+
+    .humbgerMenu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        z-index: 99;
+        top: -100%;
+
+        transition: .5s;
+
+    }
+    .humbgerMenu.active {
+        top: 0;
+    }
+    .humbgerMenu ul li .navbar-links {
+        display: block;
+        text-align: center;
+        font-size: 26px;
+        padding-bottom: 25px;
+        color: #fff;
+
+        cursor: pointer;
+    }
 }
