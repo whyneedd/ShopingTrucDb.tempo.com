@@ -1,22 +1,23 @@
+/* ======= Google Fonts ======= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
+/* ======= Base ======= */
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     box-sizing: border-box;
-
 }
 
 ::selection {
     background-color: #fff;
     color: #000;
+
 }
 
 html {
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -31,20 +32,18 @@ body {
 
 ul {
     list-style: none;
-
 }
 
 li {
     list-style: none;
-
 }
 
 a {
     text-decoration: none;
-
 }
 
 
+/* ======= hero section ======= */
 .hero {
     width: 100%;
     height: 100vh;
@@ -52,6 +51,7 @@ a {
 
 }
 
+/* ======= navigation ======= */
 .navbar {
     position: fixed;
     display: flex;
@@ -86,6 +86,7 @@ a {
 .navbar .navbar-l {
     list-style: none;
     display: flex;
+
 }
 
 .navbar .navbar-l .navbar-il {
@@ -101,6 +102,7 @@ a {
 
     transition: .4s;
     cursor: pointer;
+
 }
 
 .navbar .navbar-l .navbar-il .navbar-link:hover {
@@ -119,6 +121,7 @@ a {
 .navbar .navbar-card .navbar-l-card {
     display: flex;
     margin: 3px 5px;
+
 }
 
 .navbar .navbar-l .navbar-il .cartedicon2 {
@@ -126,9 +129,10 @@ a {
     padding: 8px 12px;
     cursor: pointer;
 
-
 }
 
+
+/* ======= barre de recherche ======= */
 .searchShow {
     position: fixed;
     display: flex;
@@ -149,6 +153,7 @@ a {
     top: -100%;
     display: block;
     pointer-events: none;
+
 }
 
 .searchShow #searchBox {
@@ -159,8 +164,10 @@ a {
     background-color: rgb(41, 41, 42);
     padding: 15px 15px;
     border-radius: 50px;
+
 }
 
+/* ======= Button de slide ======= */
 .btn-bottom {
     position: absolute;
     display: flex;
@@ -182,14 +189,16 @@ a {
     background-color: #fff;
 
     transition: .4s;
+
 }
 
 
 .btn-bottom a i:hover {
     transform: translateY(8%);
+
 }
 
-/* Texte d'accueil */
+/* ======= Section content ======= */
 .content-container {
     position: absolute;
     display: flex;
@@ -202,6 +211,7 @@ a {
 .content-container .content {
     display: inline-block;
     font-size: 1.3rem;
+
 }
 
 .content-container .content-btn {
@@ -216,9 +226,10 @@ a {
     background-color: #fff;
 
     cursor: pointer;
+
 }
 
-
+/* ======= Section boutique ======= */
 .cart-container {
     position: relative;
     display: flex;
@@ -261,6 +272,7 @@ a {
 
 .cart:hover {
     transform: translateY(-2.4%);
+
 }
 
 .cart .title-cart {
@@ -282,6 +294,7 @@ a {
 
 .cart .title-cart:hover {
     top: 0;
+
 }
 
 .cart p {
@@ -304,15 +317,17 @@ a {
     transform: translateX(-50%);
     width: 50% auto;
     height: 75%;
+
 }
 
 
 
 .inline .inline-l {
     display: flex;
-    /* flex-direction: row; */
+
 }
 
+/* ======= Placement ======= */
 .bottom {
     position: relative;
     left: 0;
@@ -321,6 +336,7 @@ a {
 
 }
 
+/* ======= Section footer ======= */
 .footer {
     width: 100%;
     min-height: 34vh;
@@ -375,10 +391,12 @@ a {
 
     transition: .4s;
     cursor: pointer;
+
 }
 
 .cart-footer ul li a:hover {
     color: #fff;
+
 }
 
 .cart-footer .inline .inline-l form input[type="email"] {
@@ -441,6 +459,7 @@ a {
 
 }
 
+/* ======= Paramètre responsive ======= */
 @media screen and (max-width: 991px) {
 
     .navbar .logo {
@@ -477,6 +496,8 @@ a {
         display: flex;
         width: 100%;
     }
+
+    /* ======= Section navigation mobile ======= */
     .humbger {
         display: block;
         position: fixed;
@@ -545,4 +566,5 @@ a {
 
         cursor: pointer;
     }
+
 }
