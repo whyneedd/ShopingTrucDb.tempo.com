@@ -260,7 +260,7 @@ a {
 }
 
 .cart:hover {
-    transform: translateY(-2%);
+    transform: translateY(-2.4%);
 }
 
 .cart .title-cart {
@@ -269,11 +269,11 @@ a {
     justify-content: center;
     align-items: center;
     left: 50%;
-    top: 90%;
+    top: 95%;
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgb(236, 99, 99);
+    background-color: rgb( 140, 106, 9 );
     color: rgb(204, 203, 203);
     transform: translateX(-50%);
     transition: .4s;
@@ -284,13 +284,25 @@ a {
     top: 0;
 }
 
-.cart .cart-img {
+.cart p {
     position: absolute;
-    display: block;
+    display: inline-block;
+    text-align: center;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+    font-weight: 550;
+
+}
+.cart .cart-img {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
     top: 1rem;
-    left: 8%;
-    width: 85%;
-    height: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50% auto;
+    height: 75%;
 }
 
 
