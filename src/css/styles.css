@@ -1,7 +1,8 @@
 /* ======= Google Fonts ======= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
 
-/* ======= Base ======= */
+
+/* ======= Section Base ======= */
 * {
     margin: 0;
     padding: 0;
@@ -41,17 +42,20 @@ li {
 a {
     text-decoration: none;
 }
+/* ======= Fin De La Section Base======= */
 
 
-/* ======= hero section ======= */
+/* ======= Section Hero ======= */
 .hero {
     width: 100%;
     height: 100vh;
     position: relative;
 
 }
+/* ======= Fin De La Section Hero ======= */
 
-/* ======= navigation ======= */
+
+/* ======= Section De Navigation ======= */
 .navbar {
     position: fixed;
     display: flex;
@@ -130,9 +134,10 @@ a {
     cursor: pointer;
 
 }
+/* ======= Fin De La Section Navigation ======= */
 
 
-/* ======= barre de recherche ======= */
+/* ======= Section Barre De Recherche ======= */
 .searchShow {
     position: fixed;
     display: flex;
@@ -166,8 +171,10 @@ a {
     border-radius: 50px;
 
 }
+/* ======= Fin De La Barre De Recherche ======= */
 
-/* ======= Button de slide ======= */
+
+/* ======= Button De Slide ======= */
 .btn-bottom {
     position: absolute;
     display: flex;
@@ -197,8 +204,10 @@ a {
     transform: translateY(8%);
 
 }
+/* ======= Fin Du Button De Slide ======= */
 
-/* ======= Section content ======= */
+
+/* ======= Section contenue ======= */
 .content-container {
     position: absolute;
     display: flex;
@@ -228,8 +237,10 @@ a {
     cursor: pointer;
 
 }
+/* ======= Fin De La Section Contenue ======= */
 
-/* ======= Section boutique ======= */
+
+/* ======= Section De La Boutique ======= */
 .cart-container {
     position: relative;
     display: flex;
@@ -326,6 +337,8 @@ a {
     display: flex;
 
 }
+/* ======= Fin De La Section De La Boutique ======= */
+
 
 /* ======= Placement ======= */
 .bottom {
@@ -335,8 +348,10 @@ a {
     top: 100%;
 
 }
+/* ======= Fin De La Section De Placement ======= */
 
-/* ======= Section footer ======= */
+
+/* ======= Section Footer ======= */
 .footer {
     width: 100%;
     min-height: 34vh;
@@ -459,6 +474,9 @@ a {
 
 }
 
+/* ======= Fin De La Section Footer ======= */
+
+
 /* ======= Paramètre responsive ======= */
 @media screen and (max-width: 991px) {
 
@@ -501,7 +519,7 @@ a {
     .humbger {
         display: block;
         position: fixed;
-     
+
         width: 35px;
         height: 35px;
         top: 15px;
@@ -514,6 +532,7 @@ a {
         border: none;
         cursor: pointer;
     }
+
     .humbger .bar,
     .humbger::before,
     .humbger::after {
@@ -554,9 +573,11 @@ a {
         transition: .5s;
 
     }
+
     .humbgerMenu.active {
         top: 0;
     }
+
     .humbgerMenu ul li .navbar-links {
         display: block;
         text-align: center;
@@ -566,5 +587,8 @@ a {
 
         cursor: pointer;
     }
+
+    /* ======= Fin De La Section navigation mobile ======= */
+
 
 }
