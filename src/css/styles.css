@@ -363,12 +363,13 @@ a {
 .row {
     display: flex;
     justify-content: center;
-    
-    padding: 50px;
     flex-wrap: wrap;
 
 }
 
+.pl-50-px {
+    padding: 50px;
+}
 .align-items-center {
     align-items: center;
 
@@ -594,6 +595,12 @@ img {
         width: 100%;
     }
 
+    .cart-star {
+        padding: 10px 50px;
+        width: 250px;
+
+    }
+
     /* ======= Section navigation mobile ======= */
     .humbger {
         display: block;
@@ -668,6 +675,7 @@ img {
     }
 
     /* ======= Fin De La Section navigation mobile ======= */
+
 
 
 }
