@@ -349,13 +349,72 @@ a {
 
 }
 
-
-
 .inline .inline-l {
     display: flex;
 
 }
 
+.cart-star_container {
+    display: grid;
+    gap: 1em;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    
+    padding: 50px;
+    flex-wrap: wrap;
+
+}
+
+.align-items-center {
+    align-items: center;
+
+}
+
+.cart-star, 
+.cart-star_content {
+    display: flex;
+    align-items: center;
+
+}
+
+.cart-star {
+    padding: 10px 50px;
+    width: 300px;
+    margin: 1em;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3em;
+}
+
+.cart-star_img {
+    height: 70px;
+    width: 70px;
+    margin-left: -2.5em;
+    border-radius: 50%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.cart-star_about {
+    margin: -10px 0 0 20px;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+
+}
+
+.colorwhite {
+    color: #fff !important;
+}
 /* ======= Fin De La Section De La Boutique ======= */
 
 
