@@ -80,18 +80,30 @@ a {
 
 }
 
-.precedent, .suivant {
+.precedent, 
+.suivant {
     position: absolute;
     top: 50%;
-    color: #fff;
+    cursor: pointer;
+    padding: 12px 18px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
     transform: translateY(-50%);
 
 }
 
-.precedent, .suivant i {
-    font-size: 3em;
-    cursor: pointer;
+.suivant {
+    padding: 10px 18px;
+    
 }
+
+.precedent, 
+.suivant i {
+    font-size: .8em;
+
+}
+
 .suivant {
     right: 1rem;
 
