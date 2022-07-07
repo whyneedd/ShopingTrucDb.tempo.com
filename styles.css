@@ -1,0 +1,673 @@
+/* ======= Google Fonts ======= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+
+/* ======= Section Base ======= */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #000;
+    color: #ffff;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: rgb(250, 250, 250);
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ======= Fin De La Section Base======= */
+
+
+/* ======= Section Hero ======= */
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.wallpers {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.wallpers img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.wallpers img.active {
+    opacity: 1;
+
+}
+
+.precedent, .suivant {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+
+}
+
+.precedent, .suivant i {
+    font-size: 3em;
+    cursor: pointer;
+}
+.suivant {
+    right: 1rem;
+
+}
+
+.precedent {
+    left: 1rem;
+}
+
+/* ======= Fin De La Section Hero ======= */
+
+
+/* ======= Section De Navigation ======= */
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    padding: 1rem 4rem;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 1px 12px rgb(31, 31, 30);
+
+}
+
+.navbar .logo {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 980;
+    color: #000;
+
+}
+
+.navbar .logo span {
+    display: inline-block;
+    font-weight: 600;
+    color: rgb(241, 41, 41);
+
+}
+
+.navbar .navbar-l {
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar .navbar-l .navbar-il {
+    list-style: none;
+    margin: 12px 12px;
+
+}
+
+.navbar .navbar-l .navbar-il .navbar-link {
+    display: block;
+    font-size: 16px;
+    color: #000;
+
+    transition: .4s;
+    cursor: pointer;
+
+}
+
+.navbar .navbar-l .navbar-il .navbar-link:hover {
+    transform: translateY(-5%);
+    color: red;
+
+}
+
+
+
+.navbar .navbar-card {
+    display: flex;
+
+}
+
+.navbar .navbar-card .navbar-l-card {
+    display: flex;
+    margin: 3px 5px;
+
+}
+
+.navbar .navbar-l .navbar-il .cartedicon2 {
+    color: #000;
+    padding: 8px 12px;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+
+/* ======= Fin De La Section Navigation ======= */
+
+
+/* ======= Button De Slide ======= */
+.btn-bottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+    bottom: 1px;
+    color: #fff;
+
+}
+
+.btn-bottom a i {
+    display: inline-block;
+    padding: 20px 23px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: #000;
+    background-color: #fff;
+
+    transition: .4s;
+
+}
+
+
+.btn-bottom a i:hover {
+    transform: translateY(8%);
+
+}
+
+/* ======= Fin Du Button De Slide ======= */
+
+
+/* ======= Section contenue ======= */
+.content-container {
+    position: absolute;
+    display: flex;
+    top: 36%;
+    left: 13rem;
+    color: #fff;
+
+}
+
+.content-container .content {
+    display: inline-block;
+    font-size: 1.3rem;
+
+}
+
+.content-container .content-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 10px 30px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #ffff;
+    background-color: #000;
+
+    cursor: pointer;
+
+}
+
+/* ======= Fin De La Section Contenue ======= */
+
+
+/* ======= Section De La Boutique ======= */
+
+.cart-container {
+    width: 100%;
+}
+
+.cart {
+    position: relative;
+    display: flex;
+    margin: 22px;
+    width: 280px;
+    height: 350px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 18px rgb(31, 31, 30);
+
+    cursor: pointer;
+
+}
+
+.cart .cart-img {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.cart .cart-about {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25px;
+
+}
+
+.cart .prime {
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    top: 13px;
+
+}
+
+
+.cart-star_container {
+    display: grid;
+    gap: 1em;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.align-items-center {
+    align-items: center;
+
+}
+
+.cart-star,
+.cart-star_content {
+    display: flex;
+    align-items: center;
+
+}
+
+.cart-star {
+    padding: 10px 50px;
+    width: 300px;
+    margin: 1em;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 1px 12px rgb(41, 41, 42);
+    border-radius: 3em;
+}
+
+.cart-star_img {
+    height: 70px;
+    width: 70px;
+    margin-left: -2.5em;
+    border-radius: 50%;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.cart-star_about {
+    margin: -10px 0 0 20px;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+
+}
+
+.colorblack {
+    color: #000 !important;
+}
+
+.pl-50-px-col {
+    padding: 50px;
+}
+.pl-30-px-col {
+    padding: 30px;
+}
+.pl-25-px-col {
+    padding: 25px;
+}
+/* ======= Fin De La Section De La Boutique ======= */
+
+
+/* ======= Placement ======= */
+.bottom {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 100%;
+
+}
+
+/* ======= Fin De La Section De Placement ======= */
+
+
+/* ======= Section Footer ======= */
+.footer {
+    width: 100%;
+    min-height: 34vh;
+    position: relative;
+
+}
+
+.footer-container {
+    padding: 70px 0;
+    color: #fff;
+    background-color: rgb(41, 41, 42);
+
+}
+
+.footer-container-rolw {
+    max-width: 1150px;
+    margin: auto;
+
+}
+
+.rowl-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cart-footer {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.cart-footer p {
+    display: inline-block;
+    color: rgb(204, 203, 203);
+    padding-top: 25px;
+
+}
+
+.cart-footer ul {
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column;
+    list-style: none;
+
+}
+
+.cart-footer ul li a {
+    display: block;
+    color: rgb(204, 203, 203);
+    margin-bottom: 17px;
+
+    transition: .4s;
+    cursor: pointer;
+
+}
+
+.cart-footer ul li a:hover {
+    color: #fff;
+
+}
+
+.cart-footer form input[type="email"] {
+    position: absolute;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    margin: 0;
+    padding: 16px 60px 16px 20px;
+
+}
+
+.cart-footer form input[type="submit"] {
+    position: absolute;
+    right: 1px;
+    padding: 15px 28px 15px;
+    border-radius: 50%;
+    font-size: 0;
+
+}
+
+.cart-footer form i {
+    position: absolute;
+    right: 2%;
+    color: #000;
+    font-family: "Flaticon";
+    font-size: 23px;
+
+}
+.copyright {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: -2.8rem;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    background-color: rgb(34, 34, 35);
+
+}
+
+.copyright p {
+    color: rgb(204, 203, 203);
+
+}
+
+/* ======= Fin De La Section Footer ======= */
+.humbgerMenu {
+    display: none;
+}
+
+.loader2,
+.loader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2000;
+}
+
+.loader2 {
+    -ms-flex-direction: row;
+
+}
+.loding {
+    position: relative;
+    margin: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #000;
+    transform: translateY(0);
+    animation: loading .8s infinite alternate;
+}
+
+.loding:nth-child(1) {
+    animation-delay: .1s;
+}
+.loding:nth-child(2) {
+    animation-delay: .2s;
+}
+.loding:nth-child(3) {
+    animation-delay: .3s;
+}
+@keyframes loading {
+    to{
+        width: 26px;
+        height: 26px;
+        transform: translateY(-16px);
+    }
+}
+.pages {
+    display: none;
+}
+/* ======= Paramètre responsive ======= */
+@media screen and (max-width: 991px) {
+
+    .navbar .logo {
+        position: absolute;
+        left: 15px;
+
+    }
+
+    .navbar {
+        height: 4rem;
+    }
+
+    .navbar .navbar-l {
+        display: none;
+
+    }
+
+    .content-container {
+        top: 24%;
+        text-align: center;
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .content-container .content {
+        font-size: 1.2rem;
+    }
+
+    .rowl-footer {
+        flex-direction: column;
+    }
+
+    .cart-footer h2 {
+        display: flex;
+        width: 100%;
+    }
+
+    .cart-star {
+        padding: 10px 50px;
+        width: 250px;
+
+    }
+
+
+    /* ======= Section navigation mobile ======= */
+    .humbger {
+        display: block;
+        position: fixed;
+
+        width: 35px;
+        height: 35px;
+        top: 15px;
+        right: 15px;
+        z-index: 1050;
+        align-items: center;
+
+        appearance: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .humbger .bar,
+    .humbger::before,
+    .humbger::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #000;
+        margin: 6px 0;
+        border-radius: 5rem;
+        transition: .4s;
+    }
+
+    .humbger.active::before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .humbger.active::after {
+        transform: rotate(45deg) translate(-9px, -8px);
+    }
+
+    .humbger.active .bar {
+        opacity: 0;
+    }
+
+    .humbgerMenu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        z-index: 99;
+        top: -100%;
+
+        transition: .5s;
+
+    }
+
+    .humbgerMenu.active {
+        top: 0;
+    }
+
+    .humbgerMenu ul li .navbar-links {
+        display: block;
+        text-align: center;
+        font-size: 26px;
+        padding-bottom: 25px;
+        color: #fff;
+
+        cursor: pointer;
+    }
+
+    /* ======= Fin De La Section navigation mobile ======= */
+
+
+
+}
