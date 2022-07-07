@@ -30,10 +30,6 @@ function showpage2() {
 
 
 
-
-
-
-
 const slide = document.getElementsByClassName("img1");
 
 let img = 0;
@@ -47,11 +43,20 @@ function enleverActiveImg() {
 }
 
 const suivant = document.querySelector(".suivant");
+const precedent = document.querySelector(".precedent");
 
 suivant.addEventListener("click", function() {
     img++;
     if(img >= nbrimg) {
         img = 0
+    }
+    enleverActiveImg();
+    slide[img].classList.add("active")
+})
+precedent.addEventListener("click", function() {
+    img--;
+    if(img < 0) {
+        img = nbrimg - 1;
     }
     enleverActiveImg();
     slide[img].classList.add("active")
