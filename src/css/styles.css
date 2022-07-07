@@ -276,7 +276,7 @@ a {
 }
 
 .cart .cart-img {
-    width: 70%;
+    width: 50%;
     position: absolute;
     left: 50%;
     top: 34%;
@@ -286,7 +286,7 @@ a {
 
 .cart .etiquettestar {
     position: absolute;
-    top: 75%;
+    top: 70%;
     left: 50%;
     font-size: 24px;
     color: rgb(222, 182, 6);
@@ -294,6 +294,8 @@ a {
 }
 .cart .cart-about {
     position: absolute;
+    text-transform: uppercase;
+    font-weight: 600;
     left: 50%;
     transform: translateX(-50%);
     bottom: 2rem;
@@ -304,7 +306,7 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 5.4rem;
+    bottom: 7rem;
 
 }
 
