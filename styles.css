@@ -267,9 +267,9 @@ a {
     margin: 22px;
     width: 280px;
     height: 350px;
+    box-shadow: 0 1px 12px rgb(41, 41, 42);
     border-radius: 6px;
-    background-color: #fff;
-    box-shadow: 0 1px 18px rgb(31, 31, 30);
+    overflow: hidden;
 
     cursor: pointer;
 
@@ -279,25 +279,41 @@ a {
     width: 70%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 34%;
     transform: translate(-50%, -50%);
 
 }
 
+.cart .etiquettestar {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    font-size: 24px;
+    color: rgb(222, 182, 6);
+    transform: translateX(-50%);
+}
 .cart .cart-about {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 25px;
+    bottom: 2rem;
 
 }
 
 .cart .prime {
     position: absolute;
-    display: inline-block;
-    left: 15px;
-    top: 13px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5.4rem;
 
+}
+
+.cart .bannerBottom {
+    position: absolute;
+    top: 94%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 208, 0);
 }
 
 
@@ -449,34 +465,6 @@ img {
 
 }
 
-.cart-footer form input[type="email"] {
-    position: absolute;
-    overflow: hidden;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    margin: 0;
-    padding: 16px 60px 16px 20px;
-
-}
-
-.cart-footer form input[type="submit"] {
-    position: absolute;
-    right: 1px;
-    padding: 15px 28px 15px;
-    border-radius: 50%;
-    font-size: 0;
-
-}
-
-.cart-footer form i {
-    position: absolute;
-    right: 2%;
-    color: #000;
-    font-family: "Flaticon";
-    font-size: 23px;
-
-}
 .copyright {
     position: absolute;
     display: flex;
