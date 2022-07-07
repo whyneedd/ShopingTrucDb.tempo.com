@@ -12,8 +12,8 @@
 }
 
 ::selection {
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #ffff;
 
 }
 
@@ -27,7 +27,7 @@ body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     min-height: 100vh;
-    background-color: rgb(30, 31, 33);
+    background-color: rgb(250, 250, 250);
 
 }
 
@@ -43,6 +43,7 @@ a {
     text-decoration: none;
 }
 
+
 /* ======= Fin De La Section Base======= */
 
 
@@ -51,7 +52,53 @@ a {
     width: 100%;
     height: 100vh;
     position: relative;
+}
 
+.wallpers {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.wallpers img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.wallpers img.active {
+    opacity: 1;
+
+}
+
+.precedent, .suivant {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+
+}
+
+.precedent, .suivant i {
+    font-size: 3em;
+    cursor: pointer;
+}
+.suivant {
+    right: 1rem;
+
+}
+
+.precedent {
+    left: 1rem;
 }
 
 /* ======= Fin De La Section Hero ======= */
@@ -62,22 +109,21 @@ a {
     position: fixed;
     display: flex;
     width: 100%;
-    padding: 2rem 7rem;
+    padding: 1rem 4rem;
     z-index: 1000;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0 2rem 7rem rgb(31, 31, 30);
+    box-shadow: 0 1px 12px rgb(31, 31, 30);
 
 }
 
 .navbar .logo {
     position: relative;
     display: flex;
-    text-transform: uppercase;
     text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.8em;
+    font-weight: 980;
     color: #000;
 
 }
@@ -133,49 +179,12 @@ a {
 .navbar .navbar-l .navbar-il .cartedicon2 {
     color: #000;
     padding: 8px 12px;
+    font-size: 1.5em;
     cursor: pointer;
 
 }
 
 /* ======= Fin De La Section Navigation ======= */
-
-
-/* ======= Section Barre De Recherche ======= */
-.searchShow {
-    position: fixed;
-    display: flex;
-    pointer-events: auto;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
-    background-color: rgb(30, 31, 33, .98);
-
-    transition: .4s;
-
-}
-
-.searchShow.active {
-    top: -100%;
-    display: block;
-    pointer-events: none;
-
-}
-
-.searchShow #searchBox {
-    display: inline-block;
-    border: none;
-    outline: none;
-    color: #ffff;
-    background-color: rgb(41, 41, 42);
-    padding: 15px 15px;
-    border-radius: 50px;
-
-}
-
-/* ======= Fin De La Barre De Recherche ======= */
 
 
 /* ======= Button De Slide ======= */
@@ -236,8 +245,8 @@ a {
     border-radius: 50px;
     border: none;
     outline: none;
-    color: #000;
-    background-color: #fff;
+    color: #ffff;
+    background-color: #000;
 
     cursor: pointer;
 
@@ -247,112 +256,50 @@ a {
 
 
 /* ======= Section De La Boutique ======= */
+
 .cart-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #000;
     width: 100%;
-    min-height: 100vh;
-    padding: 50px;
-
-    transition: .8s;
-
 }
 
-
-.row-cart {
+.cart {
     position: relative;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px;
-
-}
-
-.row-cart .cart {
-    position: relative;
-    display: flex;
-    width: 15rem;
-    height: 50vh;
+    margin: 22px;
+    width: 280px;
+    height: 350px;
+    border-radius: 6px;
     background-color: #fff;
-    margin: 12px;
-    border-radius: 8px;
-    padding: 20px;
-    overflow: hidden;
+    box-shadow: 0 1px 18px rgb(31, 31, 30);
 
     cursor: pointer;
-    transition: .4s;
-
-}
-
-.cart:hover {
-    transform: translateY(-2.4%);
-
-}
-
-.cart .title-cart {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    left: 50%;
-    top: 95%;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background-color: rgb(140, 106, 9);
-    color: rgb(204, 203, 203);
-    transform: translateX(-50%);
-    transition: .4s;
-
-}
-
-.cart .etiquetteTopVentes {
-    position: absolute;
-    display: inline-block;
-    padding: 8px 15px;
-    top: -.1rem;
-    left: -1.5px;
-    border-radius: 4px;
-    background-color: #000;
-    color: #fff;
-    font-size: 8px;
-}
-
-.cart .title-cart:hover {
-    top: 0;
-
-}
-
-.cart p {
-    position: absolute;
-    display: inline-block;
-    text-align: center;
-    bottom: 2rem;
-    left: 0;
-    width: 100%;
-    font-weight: 550;
 
 }
 
 .cart .cart-img {
-    position: relative;
-    display: inline-block;
-    padding: 15px;
-    top: 1rem;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.cart .cart-about {
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 50% auto;
-    height: 75%;
+    bottom: 25px;
 
 }
 
-.inline .inline-l {
-    display: flex;
+.cart .prime {
+    position: absolute;
+    display: inline-block;
+    left: 15px;
+    top: 13px;
 
 }
+
 
 .cart-star_container {
     display: grid;
@@ -367,15 +314,12 @@ a {
 
 }
 
-.pl-50-px {
-    padding: 50px;
-}
 .align-items-center {
     align-items: center;
 
 }
 
-.cart-star, 
+.cart-star,
 .cart-star_content {
     display: flex;
     align-items: center;
@@ -388,6 +332,7 @@ a {
     margin: 1em;
     justify-content: space-between;
     background-color: #fff;
+    box-shadow: 0 1px 12px rgb(41, 41, 42);
     border-radius: 3em;
 }
 
@@ -413,8 +358,18 @@ img {
 
 }
 
-.colorwhite {
-    color: #fff !important;
+.colorblack {
+    color: #000 !important;
+}
+
+.pl-50-px-col {
+    padding: 50px;
+}
+.pl-30-px-col {
+    padding: 30px;
+}
+.pl-25-px-col {
+    padding: 25px;
 }
 /* ======= Fin De La Section De La Boutique ======= */
 
@@ -514,7 +469,7 @@ img {
     top: -3.5rem;
     padding: 28px 28px;
     border-radius: 50px;
-    right: -80%;
+    right: -90%;
     font-size: 0;
     border: none;
     background-color: #fff;
@@ -527,7 +482,7 @@ img {
     position: relative;
     display: inline-block;
     color: #000;
-    right: -63%;
+    right: -72%;
     z-index: 1;
     font-size: 24px;
     top: -2.8rem;
@@ -555,8 +510,51 @@ img {
 }
 
 /* ======= Fin De La Section Footer ======= */
+.loader2,
+.loader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 2000;
+}
 
+.loader2 {
+    -ms-flex-direction: row;
 
+}
+.loding {
+    position: relative;
+    margin: 8px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-color: #000;
+    transform: translateY(0);
+    animation: loading .8s infinite alternate;
+}
+
+.loding:nth-child(1) {
+    animation-delay: .1s;
+}
+.loding:nth-child(2) {
+    animation-delay: .2s;
+}
+.loding:nth-child(3) {
+    animation-delay: .3s;
+}
+@keyframes loading {
+    to{
+        width: 26px;
+        height: 26px;
+        transform: translateY(-16px);
+    }
+}
+.pages {
+    display: none;
+}
 /* ======= Paramètre responsive ======= */
 @media screen and (max-width: 991px) {
 
@@ -577,8 +575,10 @@ img {
 
     .content-container {
         top: 24%;
+        text-align: center;
         width: 70%;
-        left: 8%;
+        left: 50%;
+        transform: translateX(-50%);
 
     }
 

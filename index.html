@@ -17,310 +17,424 @@
     <!-- ======= Fichier Javascript ======= -->
     <script src="./src/js/index.js" defer></script>
 
-    <title>ShopingTrucDb</title>
+    <title>ShopingTrucDb - Home</title>
 </head>
 
-<body>
-    <section class="hero" id="Home">
-        <!-- ======= Section De Navigation ======= -->
-        <header>
-            <nav class="navbar">
-                <a href="#Home" class="logo"> Shoping <span>TrucDb</span></a>
-                <ul class="navbar-l">
-                    <li class="navbar-il">
-                        <a href="#" class="navbar-link"> Accueils</a>
-                    </li>
-                    <li class="navbar-il">
-                        <a href="#shopping" class="navbar-link"> Shop</a>
-                    </li>
-                    <li class="navbar-il">
-                        <a class="navbar-link" onclick="alert('Il y a pas de promotion !')"> Promotion</a>
-                    </li>
-                    <li class="navbar-il">
-                        <a href="#avisclient" class="navbar-link"> Avis</a>
-                    </li>
-                    <li class="navbar-il">
-                        <a href="#aboutus" class="navbar-link"> Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-card navbar-l">
-                    <li class="navbar-l-card navbar-il">
-                        <a class="navbar-link cartedicon2"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="humbger">
-                <div class="bar"></div>
-            </div>
-            <div class="humbgerMenu">
-                <ul>
-                    <li>
-                        <a href="#Home" class="navbar-links"> Accueils</a>
-                    </li>
-                    <li>
-                        <a href="#shopping" class="navbar-links"> Shop</a>
-                    </li>
-                    <li>
-                        <a class="navbar-links" onclick="alert('Il y a pas de promotion !')"> Promotion</a>
-                    </li>
-                    <li>
-                        <a href="#avisclient" class="navbar-links"> Avis</a>
-                    </li>
-                    <li>
-                        <a href="#contactMe" class="navbar-links"> Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="searchShow active">
-                <input type="search" name="search" id="searchBox" placeholder="Recherche...">
-            </div>
-        </header>
-        <!-- ======= Fin De La Section De Nagivation -->
-
-        <!-- ======= Section Content ======= -->
-        <div class="content-container">
-            <div class="content">
-                <small>ShopingTrucDb</small>
-                <h1>Obtenez moins 30% sur vos <br>produit dès maintenant !</h1>
-                <a class="content-btn" href="#shopping"> Savoir Plus</a>
-            </div>
+<body onload="showpage();">
+    <div class="loader">
+        <div class="loader2">
+            <div class="loding"></div>
+            <div class="loding"></div>
+            <div class="loding"></div>
         </div>
+    </div>
 
-        <div class="btn-bottom">
-            <a href="#shopping"> <i class="fa-solid fa-arrow-down-long"></i>
-            </a>
-        </div>
-        <!-- ======= Fin De La Section Content ======= -->
-
-    </section>
-
-    <section id="shopping">
-        <!-- ======= Section De La Boutique ======= -->
-        <div class="cart-container">
-            <div class="row-cart">
-                <div class="cart" data-name="cart-1">
-                    <h4 class="title-cart"> 8€</h4>
-                    <p>Aubergine</p>
-                    <img class="cart-img" src="./src/img/aubergine.png" alt="Aubergine">
+    <div class="pages">
+        <section class="hero" id="Home">
+            <!-- ======= Section De Navigation ======= -->
+            <header>
+                <nav class="navbar">
+                    <a href="#Home" class="logo"> Shoping <span>TrucDb</span></a>
+                    <ul class="navbar-l">
+                        <li class="navbar-il">
+                            <a href="#" class="navbar-link"> Accueils</a>
+                        </li>
+                        <li class="navbar-il">
+                            <a href="#shopping" class="navbar-link"> Shop</a>
+                        </li>
+                        <li class="navbar-il">
+                            <a class="navbar-link" onclick="alert('Il y a pas de promotion !')"> Promotion</a>
+                        </li>
+                        <li class="navbar-il">
+                            <a href="#" class="navbar-link"> Blog</a>
+                        </li>
+                        <li class="navbar-il">
+                            <a href="#" class="navbar-link"> À propos</a>
+                        </li>
+                        <li class="navbar-il">
+                            <a href="#aboutus" class="navbar-link"> Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-card navbar-l">
+                        <li class="navbar-l-card navbar-il">
+                            <a href="#" class="navbar-link">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAMAAAC6CgRnAAABOFBMVEWIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIhUhv3LAAAAaHRSTlMAAwQFCw4TFBUWGh4fISIjJCYnKCorLC0uLzAzNDc8PT4/REZHSElKTU5PUVJVV1heYGVmZ2hpam5wdHZ5ent8fn+BgoOFh4iNkZKTlpukpaeqq6ytrq+wsbKztLi+v8DCw8THzc7P0BcJMkwAAAFzSURBVCjPZZJnQ8JADIYfUaQOsKgVNyLDXQduBcVVJ3JVUakKjtb//w/8cO0hep+Se5JcLnkhOBHTqoiKZUb4eyZr78V0PBZPFz9qky1EE/aQcoaE0Jpo1Mu2hGa9kcBMuDGAweLt47lMj30l/IKuDnTePa0M9GZeP3bbAN2VLYkZIFSfk5EdpRuAnABICoC5C/XaazeASALPBsBpRrGjBQCjBpF3AK4mFNvaBKChYRYAKM0rtp4HoGBiyWKr24rtLQGQsSjHAVgrKVZaA6C/jNMDQFVXrK8KQI8T5F1OK5a+CPKstJySO+yjYTlBMhbLsk8Wz3x2tkjQp9aQZthrB6DdC8uLRhfUDGkfbACQP5Cu4QBTQjoT1wBc+wMSSQA7B8DsCQDHch9yD2ieDrS9jAMw9hIC9G+tufeos+P3uf8WJeYmmnp5qKfU31P1e2/0l87sqgokUbW1FmmlnM/DrBE1soefTuqfejXTqtgVy2zm/AAAtDPWTEDb4QAAAABJRU5ErkJggg=="
+                                    alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="humbger">
+                    <div class="bar"></div>
                 </div>
-                <div class="cart" data-name="cart-2">
-                    <h4 class="title-cart"> 9€</h4>
-                    <p>Kiwi</p>
-                    <img class="cart-img" src="./src/img/Kiwi.png" alt="Kiwi">
-
+                <div class="humbgerMenu">
+                    <ul>
+                        <li>
+                            <a href="#Home" class="navbar-links"> Accueils</a>
+                        </li>
+                        <li>
+                            <a href="#shopping" class="navbar-links"> Shop</a>
+                        </li>
+                        <li>
+                            <a class="navbar-links" onclick="alert('Il y a pas de promotion !')"> Promotion</a>
+                        </li>
+                        <li>
+                            <a href="#avisclient" class="navbar-links"> Avis</a>
+                        </li>
+                        <li>
+                            <a href="#contactMe" class="navbar-links"> Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="cart" data-name="cart-3">
-                    <h4 class="title-cart"> 12€</h4>
-                    <p>Banane</p>
-                    <img class="cart-img" src="./src/img/banane.png" alt="Banane">
+            </header>
+            <!-- ======= Fin De La Section De Nagivation -->
 
-                </div>
-                <div class="cart" data-name="cart-4">
-                    <h3 class="etiquetteTopVentes">Top Ventes</h3>
-                    <h4 class="title-cart"> 2€</h4>
-                    <p>Pomme De Terre</p>
-                    <img class="cart-img" src="./src/img/PommeDeTerre.png" alt="Pomme De Terre">
+            <div class="wallpers">
+                <img src="./src/img/mae-mu-U1iYwZ8Dx7k-unsplash.jpg" alt="" class="img1 active">
+                <img src="./src/img/mae-mu-vbAEHCrvXZ0-unsplash.jpg" alt="" class="img1">
+                <img src="./src/img/nader-ayman-uJma4oWv8UM-unsplash.jpg" alt="" class="img1">
+            </div>
 
-                </div>
-                <div class="cart" data-name="cart-5">
-                    <h4 class="title-cart"> 1,50€</h4>
-                    <p>Poire</p>
-                    <img class="cart-img" src="./src/img/Poire.png" alt="Poire">
-
-                </div>
-                <div class="cart" data-name="cart-6">
-                    <h4 class="title-cart"> 4,60€</h4>
-                    <p>Oignon Violet</p>
-                    <img class="cart-img" src="./src/img/OignonViolet.png" alt="Oignon Violet">
-
-                </div>
-                <div class="cart" data-name="cart-7">
-                    <h4 class="title-cart"> 6€</h4>
-                    <p>Pastèque</p>
-                    <img class="cart-img" src="./src/img/Pastèque.png" alt="Pastèque">
-
-                </div>
-                <div class="cart" data-name="cart-8">
-                    <h4 class="title-cart"> 3,05€</h4>
-                    <p>Piments Rouge</p>
-                    <img class="cart-img" src="./src/img/PimentsRouge.png" alt="Piments Rouge">
-
-                </div>
-                <div class="cart" data-name="cart-9">
-                    <h4 class="title-cart"> 7,50€</h4>
-                    <p>Tomate Rouge</p>
-                    <img class="cart-img" src="./src/img/Tomate.png" alt="Tomate">
-
-                </div>
-                <div class="cart" data-name="cart-10">
-                    <h4 class="title-cart"> 5€</h4>
-                    <p>ananas</p>
-                    <img class="cart-img" src="./src/img/ananas.png" alt="Ananas">
-
-                </div>
-                <div class="cart" data-name="cart-11">
-                    <h4 class="title-cart"> 10€</h4>
-                    <p>Melon</p>
-                    <img class="cart-img" src="./src/img/melon.png" alt="Melon">
-
-                </div>
-                <div class="cart" data-name="cart-12">
-                    <h4 class="title-cart"> 2,80€</h4>
-                    <p>Chou Vert</p>
-                    <img class="cart-img" src="./src/img/chouvert.png" alt="Chou Vert">
-
-                </div>
-                <div class="cart" data-name="cart-13">
-                    <h4 class="title-cart"> 7,80€</h4>
-                    <img class="cart-img" src="./src/img/5a60afe4eace967f8e026a18.png" alt="">
-
-                </div>
-                <div class="cart" data-name="cart-14">
-                    <h4 class="title-cart"> 4€</h4>
-                    <p>Carottes</p>
-                    <img class="cart-img" src="./src/img/carottes.png" alt="Carotte">
-
-                </div>
-                <div class="cart" data-name="cart-15">
-                    <h4 class="title-cart"> 1,80€</h4>
-                    <p>Oignon jaunes</p>
-                    <img class="cart-img" src="./src/img/OignonJaunes.png" alt="Oignon Jaunes">
-
-                </div>
-                <div class="cart" data-name="cart-16">
-                    <h4 class="title-cart"> 2€</h4>
-                    <p>Mangue</p>
-                    <img class="cart-img" src="./src/img/mangue.png" alt="Mangue">
-
+            <div class="precedent">
+                <i class="fa-solid fa-circle-arrow-left"></i>
+            </div>
+            <div class="suivant">
+                <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+            <!-- ======= Section Content ======= -->
+            <div class="content-container">
+                <div class="content">
+                    <small>ShopingTrucDb</small>
+                    <h1>Obtenez moins 30% sur vos <br>produit dès maintenant !</h1>
+                    <button class="content-btn" href="#shopping"> Savoir Plus</button>
                 </div>
             </div>
-        </div>
 
-        <div class="cart-star_container" id="avisclient">
-            <h1 class="text-center colorwhite">Avis clients</h1>
-            <div class="row align-items-center">
-                <div class="cart-star">
-                    <div class="cart-star_content">
-                        <img src="https://i.pinimg.com/236x/e5/90/97/e5909763f0642c7982434610fc66c3d3.jpg"
-                            class="cart-star_img" alt="">
-                        <div class="cart-star_about">
-                            <h1 class="name">David</h1>
-                            <span class="avis">Bon services</span>
+            <div class="btn-bottom">
+                <a href="#shopping"> <i class="fa-solid fa-arrow-down-long"></i>
+                </a>
+            </div>
+            <!-- ======= Fin De La Section Content ======= -->
+
+        </section>
+
+        <section id="shopping">
+            <!-- ======= Section De La Boutique ======= -->
+            <div class="cart-container">
+                <div class="row align-items-center pl-25-px-col">
+                    <div class="cart" data-name="cart-1">
+                        <img class="cart-img" src="./src/img/aubergine.png" alt="Aubergine">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
                         </div>
+                        <div class="cart-about">
+                            <p>Aubergine</p>
+                        </div>
+                        <div class="bannerBottom"></div>
                     </div>
-                </div>
-                <div class="cart-star">
-                    <div class="cart-star_content">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg1mMD8KibO_fBcNV6JsELKUn-7zj9jo9GQ&usqp=CAU"
-                            class="cart-star_img" alt="">
-                        <div class="cart-star_about">
-                            <h1 class="name">William</h1>
-                            <span class="avis">8/10 le service</span>
+                    <div class="cart" data-name="cart-2">
+                        <img class="cart-img" src="./src/img/Kiwi.png" alt="Kiwi">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
                         </div>
+                        <div class="cart-about">
+                            <p>Kiwi</p>
+                        </div>
+                        <div class="bannerBottom"></div>
                     </div>
-                </div>
-                <div class="cart-star">
-                    <div class="cart-star_content">
-                        <img src="https://i.discord.fr/notix.webp"
-                            class="cart-star_img" alt="">
-                        <div class="cart-star_about">
-                            <h1 class="name">Kevin</h1>
-                            <span class="avis">Un très bon vendeur !</span>
+                    <div class="cart" data-name="cart-3">
+                        <img class="cart-img" src="./src/img/banane.png" alt="Banane">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
                         </div>
+                        <div class="cart-about">
+                            <p>Banane</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- ======= Fin De La Section De La Boutique ======= -->
+                    <div class="cart" data-name="cart-4">
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Pomme De Terre</p>
+                        </div>
+                        <img class="cart-img" src="./src/img/PommeDeTerre.png" alt="Pomme De Terre">
+                        <div class="bannerBottom"></div>
 
-    </section>
+                    </div>
+                    <div class="cart" data-name="cart-5">
+                        <img class="cart-img" src="./src/img/Poire.png" alt="Poire">
 
-    <section id="aboutus">
-        <!-- ======= Section Footer ======= -->
-        <footer class="footer bottom">
-            <div class="footer-container">
-                <div class="footer-container-rolw">
-                    <div class="rowl-footer">
-                        <div class="cart-footer">
-                            <h2>À propos</h2>
-                            <ul>
-                                <li>
-                                    <a href="#"> Avis client</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Notre histoire</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Pourquoi ShopingTrucDb ?</a>
-                                </li>
-                            </ul>
+                        <h4 class="title-cart"> 1,50€</h4>
+                        <div class="cart-about">
+                            <p>Poire</p>
                         </div>
+                        <div class="bannerBottom"></div>
 
-                        <div class="cart-footer">
-                            <h2>Besoin d'aide ?</h2>
-                            <ul>
-                                <li>
-                                    <a onclick="alert('Vous pouvez nous contacter au 0696')"> Nous contacter</a>
-                                </li>
-                                <li>
-                                    <a onclick="alert('Cette fonction est indisponible')"> Gérer mes cookies</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Modes de paiment</a>
-                                </li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="cart" data-name="cart-6">
+                        <img class="cart-img" src="./src/img/OignonViolet.png" alt="Oignon Violet">
 
-                        <div class="cart-footer">
-                            <h2>Informations</h2>
-                            <ul>
-                                <li>
-                                    <a href="#"> CGV</a>
-                                </li>
-                                <li>
-                                    <a href="#"> CGU</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Confidentialité</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Cookies</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Mentions légales</a>
-                                </li>
-                                <li>
-                                    <a href="#"> Plan du site</a>
-                                </li>
-                            </ul>
+                        <div class="prime">
+                            <h4> 9€</h4>
                         </div>
-                        <div class="cart-footer">
-                            <h2>Email</h2>
-                            <p>Entrez votre adresse e-mail et recevez des notifications sur les nouvelles, les offres,
-                                etc.</p>
-                            <ul class="inline" id="contactMe">
-                                <li class="inline-l">
-                                    <form>
-                                        <input type="email" placeholder="E-mail" required>
-                                        <em class="paper-plane">
-                                            <input type="submit" value="submit">
-                                        </em>
-                                        <i class="fa-solid fa-paper-plane"></i>
-                                    </form>
-                                </li>
-                            </ul>
+                        <div class="cart-about">
+                            <p>Oignon Violet</p>
                         </div>
-                        <div class="copyright">
-                            <p>© 2022 Tous les droits sont réservés. Développé par Zedrox </p>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-7">
+                        <img class="cart-img" src="./src/img/Pastèque.png" alt="Pastèque">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
                         </div>
+                        <div class="cart-about">
+                            <p>Pastèque</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-8">
+                        <img class="cart-img" src="./src/img/PimentsRouge.png" alt="Piments Rouge">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Piments Rouge</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-9">
+                        <img class="cart-img" src="./src/img/Tomate.png" alt="Tomate">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Tomate Rouge</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-10">
+                        <img class="cart-img" src="http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c187.png"
+                            alt="Ananas">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>ananas</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-11">
+                        <img class="cart-img" src="./src/img/melon.png" alt="Melon">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Melon</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-12">
+                        <img class="cart-img" src="./src/img/chouvert.png" alt="Chou Vert">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Chou Vert</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-13">
+                        <img class="cart-img" src="./src/img/5a60afe4eace967f8e026a18.png" alt="">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-14">
+                        <img class="cart-img" src="./src/img/carottes.png" alt="Carotte">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Carottes</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+                    </div>
+                    <div class="cart" data-name="cart-15">
+                        <img class="cart-img" src="./src/img/OignonJaunes.png" alt="Oignon Jaunes">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Oignon jaunes</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
+                    </div>
+                    <div class="cart" data-name="cart-16">
+                        <img class="cart-img" src="./src/img/mangue.png" alt="Mangue">
+
+                        <div class="prime">
+                            <h4> 9€</h4>
+                        </div>
+                        <div class="cart-about">
+                            <p>Mangue</p>
+                        </div>
+                        <div class="bannerBottom"></div>
+
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- ======= Fin De La Section Footer ======= -->
 
-    </section>
+            <div class="cart-star_container" id="avisclient">
+                <h1 class="text-center colorblack">Avis clients</h1>
+                <div class="row align-items-center">
+                    <div class="cart-star">
+                        <div class="cart-star_content">
+                            <img src="https://i.pinimg.com/236x/e5/90/97/e5909763f0642c7982434610fc66c3d3.jpg"
+                                class="cart-star_img" alt="">
+                            <div class="cart-star_about">
+                                <h1 class="name">David</h1>
+                                <span class="avis">Bon services</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-star">
+                        <div class="cart-star_content">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJg1mMD8KibO_fBcNV6JsELKUn-7zj9jo9GQ&usqp=CAU"
+                                class="cart-star_img" alt="">
+                            <div class="cart-star_about">
+                                <h1 class="name">William</h1>
+                                <span class="avis">8/10 le service</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-star">
+                        <div class="cart-star_content">
+                            <img src="https://i.discord.fr/notix.webp" class="cart-star_img" alt="">
+                            <div class="cart-star_about">
+                                <h1 class="name">Kevin</h1>
+                                <span class="avis">Un très bon vendeur !</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ======= Fin De La Section De La Boutique ======= -->
 
+        </section>
+
+        <section id="aboutus">
+            <!-- ======= Section Footer ======= -->
+            <footer class="footer bottom">
+                <div class="footer-container">
+                    <div class="footer-container-rolw">
+                        <div class="rowl-footer">
+                            <div class="cart-footer">
+                                <h2>À propos</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"> Avis client</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Notre histoire</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Pourquoi ShopingTrucDb ?</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="cart-footer">
+                                <h2>Besoin d'aide ?</h2>
+                                <ul>
+                                    <li>
+                                        <a onclick="alert('Vous pouvez nous contacter au 0696')"> Nous contacter</a>
+                                    </li>
+                                    <li>
+                                        <a onclick="alert('Cette fonction est indisponible')"> Gérer mes cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Modes de paiment</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="cart-footer">
+                                <h2>Informations</h2>
+                                <ul>
+                                    <li>
+                                        <a href="#"> CGV</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> CGU</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Confidentialité</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Cookies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Mentions légales</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Plan du site</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cart-footer">
+                                <h2>Email</h2>
+                                <p>Entrez votre adresse e-mail et recevez des notifications sur les nouvelles, les
+                                    offres,
+                                    etc.</p>
+                                <ul class="inline" id="contactMe">
+                                    <li class="inline-l">
+                                        <form>
+                                            <input type="email" placeholder="E-mail" required>
+                                            <em class="paper-plane">
+                                                <input type="submit" value="submit">
+                                            </em>
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copyright">
+                                <p>© 2022 Tous les droits sont réservés. Développé par Zedrox </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- ======= Fin De La Section Footer ======= -->
+
+        </section>
+
+    </div>
 </body>
 
 </html>
