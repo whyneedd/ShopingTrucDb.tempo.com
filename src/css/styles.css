@@ -257,8 +257,8 @@ a {
     border-radius: 50px;
     border: none;
     outline: none;
-    color: #ffff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
 
     cursor: pointer;
 
