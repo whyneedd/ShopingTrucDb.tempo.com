@@ -418,6 +418,7 @@ img {
 
 
 /* ======= Section About ======= */
+
 .about {
     width: 100%;
     padding: 100px 0px;
@@ -427,6 +428,7 @@ img {
 
 .about img {
     height: auto;
+    border-radius: 40px;
     width: 430px;
 
 } 
