@@ -271,6 +271,7 @@ a {
 
 .cart-container {
     width: 100%;
+
 }
 
 .cart {
@@ -358,8 +359,8 @@ a {
 
 .cart-star {
     padding: 10px 50px;
-    width: 300px;
-    margin: 1em;
+    width: 350px;
+    margin: 1rem;
     justify-content: space-between;
     background-color: #fff;
     box-shadow: 0 1px 12px rgb(41, 41, 42);
@@ -415,6 +416,44 @@ img {
 
 /* ======= Fin De La Section De Placement ======= */
 
+
+/* ======= Section About ======= */
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+
+} 
+
+.about-text {
+    width: 550px;
+
+}
+
+.main {
+    position: relative;
+    display: flex;
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.about-text p {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+
+/* ======= Section About End ======= */
 
 /* ======= Section Footer ======= */
 .footer {
