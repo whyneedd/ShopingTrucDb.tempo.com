@@ -11,7 +11,12 @@
     box-sizing: border-box;
 }
 
-::selection {
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*::selection {
     background-color: #000;
     color: #ffff;
 
@@ -80,7 +85,7 @@ a {
 
 }
 
-.precedent, 
+.precedent,
 .suivant {
     position: absolute;
     top: 50%;
@@ -95,10 +100,10 @@ a {
 
 .suivant {
     padding: 10px 18px;
-    
+
 }
 
-.precedent, 
+.precedent,
 .suivant i {
     font-size: .8em;
 
@@ -126,7 +131,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0 1px 12px rgb(31, 31, 30);
+    box-shadow: 0 1px 12px rgb(31, 31, 30, .48);
 
 }
 
@@ -305,6 +310,7 @@ a {
     color: rgb(222, 182, 6);
     transform: translateX(-50%);
 }
+
 .cart .cart-about {
     position: absolute;
     text-transform: uppercase;
@@ -396,12 +402,15 @@ img {
 .pl-50-px-col {
     padding: 50px;
 }
+
 .pl-30-px-col {
     padding: 30px;
 }
+
 .pl-25-px-col {
     padding: 25px;
 }
+
 /* ======= Fin De La Section De La Boutique ======= */
 
 
@@ -431,7 +440,7 @@ img {
     border-radius: 40px;
     width: 430px;
 
-} 
+}
 
 .about-text {
     width: 550px;
@@ -559,6 +568,7 @@ img {
     -ms-flex-direction: row;
 
 }
+
 .loding {
     position: relative;
     margin: 8px;
@@ -573,22 +583,27 @@ img {
 .loding:nth-child(1) {
     animation-delay: .1s;
 }
+
 .loding:nth-child(2) {
     animation-delay: .2s;
 }
+
 .loding:nth-child(3) {
     animation-delay: .3s;
 }
+
 @keyframes loading {
-    to{
+    to {
         width: 26px;
         height: 26px;
         transform: translateY(-16px);
     }
 }
+
 .pages {
     display: none;
 }
+
 /* ======= Paramètre responsive ======= */
 @media screen and (max-width: 991px) {
 
@@ -659,7 +674,7 @@ img {
     .humbger::after {
         content: "";
         display: block;
-        width: 100%;
+        width: 80%;
         height: 5px;
         background-color: #000;
         margin: 6px 0;
@@ -687,7 +702,7 @@ img {
         align-items: center;
         width: 100%;
         height: 100vh;
-        background-color: #000;
+        background-color: rgb(255, 255, 255, .87);
         z-index: 99;
         top: -100%;
 
@@ -704,7 +719,7 @@ img {
         text-align: center;
         font-size: 26px;
         padding-bottom: 25px;
-        color: #fff;
+        color: #000;
 
         cursor: pointer;
     }
